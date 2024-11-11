@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+body{
+ background: #e6e6e6;
+}
+header{
+    width: 100%;
+    background: #407dcd;
+    color: #fff;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+header .logo{
+    width: 100px;
+    height: 80px;    
+}
+header .logo .img-logo{
+    height: 100%;
+}
+.modal-login{
+    max-width: 400px!important;
+}
+.contenedor{
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 30px;
+    width: 100%;
+    display: flex;  
+}
+.contenedor .contenedor-registro{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;    
+}
+.contenedor .contenedor-login .login , .contenedor .contenedor-registro .registro {
+    width: 100%;
+    padding: 20px;   
+}
+.titulo{
+    color: #ffffff;
+}
+.titulo-s2{
+    color: #333;
+}
+.text-label-login{
+    color: #666;
+}
+.box-text{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-text a{
+    text-decoration: underline;
+    margin-top: 10px;
+    color: #ccc;
+}
+.box-text a:hover{
+    color: #aaa;
+}
+.text-login{
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    font-size: 15px;
+    padding: 10px 15px;
+    background: rgba(200,200,200,0.3);
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.text-login::placeholder{
+    color:#ffffff;
+}
+.text-login{
+    color: #ffffff;
+}
+.text-login:focus{
+    border: none;
+    border-bottom: 1px solid #ffffff ;
+}
+.btn{
+    font-size: 15px;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+.modal-login a{
+    padding-top: 5px;
+    font-size: 14px;
+    color: var(--main-cl-a);
+    text-decoration: none;
+}
+.modal-login a:nth-child(1){
+    font-size: 16px;
+}
+.modal-login a:hover{
+    text-decoration: underline;
+}
+.text-regis{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: #747474;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--main-header-cl);
+    background: rgba(150,150,150,0.2);
+}
+@media(max-width: 500px){
+    .contenedor{
+        display: block;
+    }
+    .contenedor .contenedor-login,.contenedor .contenedor-registro{
+        width: 100%!important;
+    }
+    .contenedor .contenedor-login{
+        border-radius: 5px 5px 0 0;
+    }
+    .contenedor .contenedor-registro{
+        border-radius: 0 0 5px 5px;
+    }
+}
+input{
+    font-size: 15px;
+    border-style: none;
+    padding: 10px;
+}
+input,button{
+    outline: none;
+}
+button{
+    background: #ddd;
+    color: #333;
+    font-weight: bold;
+}
+button:hover{
+    background: #ccc;
+}
